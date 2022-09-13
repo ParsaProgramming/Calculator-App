@@ -1,9 +1,13 @@
 let input = document.querySelector("input");
 
 function Calculate() {
-    let question = input.value;
-    let answer = eval(question);
-    input.value = answer;
+    if(input.value === ''){
+        alert("please enter a number")
+    }else{
+        let question = input.value;
+        let answer = eval(question);
+        input.value = answer;
+    }
 
 }
 
