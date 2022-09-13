@@ -13,24 +13,25 @@
             <input type="text">
         </div>
         <div class="buttons">
-            <button class="btn btn1">1</button>
-            <button class="btn btn2">2</button>
-            <button class="btn btn3">3</button>
-            <button class="btn btn4">4</button>
-            <button class="btn btn5">5</button>
-            <button class="btn btn6">6</button>
-            <button class="btn btn7">7</button>
-            <button class="btn btn8">8</button>
-            <button class="btn btn9">9</button>
-            <button class="btn btn0">0</button>
-            <button class="btn btndot">.</button>
-            <button class="btn btnC">AC</button>
-            <button class="btn btnplus">+</button>
-            <button class="btn btnminus">-</button>
-            <button class="btn btnmultiply">x</button>
-            <button class="btn btndivision">/</button>
-            <button class="btn btnequal">=</button>
+            <button class="btn btn1" onclick = "AddingNumberToScreen('1')">1</button>
+            <button class="btn btn2" onclick = "AddingNumberToScreen('2')">2</button>
+            <button class="btn btn3" onclick = "AddingNumberToScreen('3')">3</button>
+            <button class="btn btn4" onclick = "AddingNumberToScreen('4')">4</button>
+            <button class="btn btn5" onclick = "AddingNumberToScreen('5')">5</button>
+            <button class="btn btn6" onclick = "AddingNumberToScreen('6')">6</button>
+            <button class="btn btn7" onclick = "AddingNumberToScreen('7')">7</button>
+            <button class="btn btn8" onclick = "AddingNumberToScreen('8')">8</button>
+            <button class="btn btn9" onclick = "AddingNumberToScreen('9')">9</button>
+            <button class="btn btn0" onclick = "AddingNumberToScreen('0')">0</button>
+            <button class="btn btndot" onclick = "AddingNumberToScreen('.')">.</button>
+            <button class="btn btnC" onclick="ClearScreen()">AC</button>
+            <button class="btn btnplus" onclick = "AddingNumberToScreen('+')">+</button>
+            <button class="btn btnminus" onclick = "AddingNumberToScreen('-')">-</button>
+            <button class="btn btnmultiply" onclick = "AddingNumberToScreen('*')">x</button>
+            <button class="btn btndivision" onclick = "AddingNumberToScreen('/')">/</button>
+            <button class="btn btnequal" onclick="Calculate()">=</button>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
