@@ -1,1 +1,84 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ecf0f1;
+}
+
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2c3e50;
+  height: 510px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.calculator input {
+  background: transparent;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  font-family: Poppins;
+}
+.calculator .buttons {
+  margin-top: 25px;
+  display: grid;
+  grid-template-rows: repeat(5, 60px);
+  grid-template-columns: repeat(4, 60px);
+  gap: 25px;
+}
+.calculator .buttons .btn {
+  border-radius: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 25px;
+  transition: all 0.2s ease;
+}
+.calculator .buttons .btn:hover {
+  background: #476280;
+}
+.calculator .buttons .btn.btnplus {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: #476280;
+}
+.calculator .buttons .btn.btnminus {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: #476280;
+}
+.calculator .buttons .btn.btnmultiply {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: #476280;
+}
+.calculator .buttons .btn.btndivision {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: #476280;
+}
+.calculator .buttons .btn.btnequal {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  background: #f1c40f;
+}/*# sourceMappingURL=style.css.map */
